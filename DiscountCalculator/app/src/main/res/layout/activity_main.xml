@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original Price"
+        android:paddingTop="15dp"
+        android:paddingLeft="30dp"
+        android:textSize="18dp"/>
+
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percent Off (%)"
+        android:paddingTop="5dp"
+        android:paddingLeft="30dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtPercent"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Include Tax 7%"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:text="CALCULATE"
+            android:textColor="#000"
+            android:backgroundTint="#bfbfbf"
+
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dollars"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textSize="50dp"
+        android:textAlignment="textEnd"
+
+        />
+
+<!--        android:textAlignment="textEnd"-->
+
+
+
+
+
+
+
+</LinearLayout>
